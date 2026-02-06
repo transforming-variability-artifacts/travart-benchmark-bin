@@ -7,7 +7,7 @@ library(rstatix)
 library(report)
 library(crayon) # For better readability
 
-files = list.files("~/envdev/repos/travart-core/benchmarks_new", 
+files = list.files("../benchmarks", 
                    include.dirs = FALSE, recursive = FALSE, full.names = TRUE,
                    pattern="*.csv")
 
