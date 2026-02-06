@@ -7,7 +7,7 @@ library(rstatix)
 library(report)
 library(crayon) # For better readability
 
-files = list.files("../benchmarks", 
+files = list.files("../benchmarks_new", 
                    include.dirs = FALSE, recursive = FALSE, full.names = TRUE,
                    pattern="*.csv")
 
