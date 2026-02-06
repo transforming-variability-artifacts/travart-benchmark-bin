@@ -146,7 +146,7 @@ analyze_and_plot <-
 make_scatter_default <- function() {
   
   files = list.files(
-    "../benchmarks/merged-by-path",
+    "../benchmarks_new/merged-by-path",
     include.dirs = FALSE,
     recursive = FALSE,
     full.names = TRUE,

@@ -11,7 +11,7 @@ source("travart-scatter.R")
 # UVL-to-Kconfig, with or without complexity factor
 
 data_dm2uvl <- read.csv(
-  "../benchmarks/merged-by-path/average_transformation_times(dm2uvl).csv",
+  "../benchmarks_new/merged-by-path/average_transformation_times(dm2uvl).csv",
   stringsAsFactors = FALSE
 )
 
@@ -21,7 +21,7 @@ data_dm2uvl_old <- read.csv(
 )
 
 data_dm2uvl_rt <- read.csv(
-  "../benchmarks/merged-by-path/average_transformation_times(roundtrip@dopler_backward).csv",
+  "../benchmarks_new/merged-by-path/average_transformation_times(roundtrip@dopler_backward).csv",
   stringsAsFactors = FALSE
 )
 
@@ -53,7 +53,7 @@ analyze_and_plot(data_dm2uvl_rt_doctored, "dm2uvl-rt_old", "Model size (#decisio
 #  }
   
 data_dopler_native <- read.csv(
-  "../benchmarks/dopler_native_avg_forward.csv",
+  "../benchmarks_new/dopler_native_avg_forward.csv",
   stringsAsFactors = FALSE
 )
 
@@ -61,32 +61,32 @@ analyze_and_plot(data_dm2uvl, "dm2uvl-control", control_dataset =  data_dopler_n
 analyze_and_plot(data_dm2uvl, "dm2uvl-control-post50", control_dataset = data_dopler_native[data_dopler_native$initialSize > 50, ], xbound = 1000, draw_baseline = TRUE)
 
 data_kconfig_native <- read.csv(
-  "../benchmarks/kconfig_native_avg_forward.csv",
+  "../benchmarks_new/kconfig_native_avg_forward.csv",
   stringsAsFactors = FALSE
 )
 
 data_kc2uvl <- read.csv(
-  "../benchmarks/merged-by-path/average_transformation_times(kc2uvl).csv",
+  "../benchmarks_new/merged-by-path/average_transformation_times(kc2uvl).csv",
   stringsAsFactors = FALSE
 )
 
 data_uvl2kc <- read.csv(
-  "../benchmarks/merged-by-path/average_transformation_times(uvl2kc).csv",
+  "../benchmarks_new/merged-by-path/average_transformation_times(uvl2kc).csv",
   stringsAsFactors = FALSE
 )
 
 data_uvl2fide <- read.csv(
-  "../benchmarks/merged-by-path/average_transformation_times(uvl2fide).csv",
+  "../benchmarks_new/merged-by-path/average_transformation_times(uvl2fide).csv",
   stringsAsFactors = FALSE
 )
 
 data_uvl2kc_linux <- read.csv(
-  "../benchmarks/linux_uvl_avg_uvl2kc_rerun.csv",
+  "../benchmarks_new/linux_uvl_avg_uvl2kc_rerun.csv",
   stringsAsFactors = FALSE
 )
 
 data_uvl2fide_linux <- read.csv(
-  "../benchmarks/linux_uvl_avg_uvl2fide_rerun.csv",
+  "../benchmarks_new/linux_uvl_avg_uvl2fide_rerun.csv",
   stringsAsFactors = FALSE
 )
 
