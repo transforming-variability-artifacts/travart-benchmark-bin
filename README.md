@@ -1,6 +1,6 @@
 # Benchmarking artifacts and auxiliary scripts
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.18507633-blue)](https://doi.org/10.5281/zenodo.18507633)
+[![DOI](https://zenodo.org/badge/1056526048.svg)](https://doi.org/10.5281/zenodo.18507632)
 
 The tarballs contain the benchmarking results presented in the thesis. The *_new tarball contains the effective observations, the tarball with the older iteration of the results
 are used by the `travart-control.R` script (see `Rscripts` folder), this tarball also contains some of the early analysis done with JASP, which was cut in the final version of the thesis.
