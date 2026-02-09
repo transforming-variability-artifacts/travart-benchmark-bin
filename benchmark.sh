@@ -7,7 +7,7 @@ TIMEOUT=$3
 
 # Experiments 1-6, one-way in both directions
 ## DOPLER (alias "dm" = decision model)
-for run in {1..5}; do
+for run in {8..1}; do
 #rm -rfv /tmp/${DATASET_NAME}_out-dopler
 mkdir ${DATASET_NAME}_results${run}
 retry --until=success --delay 1 -- mvn exec:java \
